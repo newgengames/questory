@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(Montserrat-Regular.ttf);
+}
+html {
+	overflow-x:hidden;
+	}
+
+body {
+  margin:0;
+  text-align: center;
+  background: #eee;
+  overflow-x: hidden;
+  font-family: Montserrat-Regular;
+	}
+
+section {
+  
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom:60px;
+  overflow: hidden;
+  display:flex;
+  flex-wrap:wrap;
+  transition:transform 0.4s;
+  animation:section 0.4s ease-out 1;
+}
+
+@keyframes section {
+	0% {
+		transform:translateX(100%);
+		opacity:0;
+	}
+		
+	100% {
+		transform:translateX(0%);
+		opacity:1;
+		}
+	}
+	
+
+.module {
+  width: 110px;
+  height: 155px;
+  background: white;
+  position: relative;
+  margin:0 auto;
+margin-bottom:10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  opacity:1;
+  
+}
+
+
+
+
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.title {
+  width: 100%;
+  padding-top:100px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  transition:transform 0.4s;
+  animation:title 0.4s ease-out 1;
+}
+
+@keyframes title {
+  0% {
+    transform:translateY(-100px);
+    }
+    
+  100% {
+    transform:translateY(0px);
+    }
+  }
+
+.module-txt {
+  font-size: 15px;
+}
+
+.top {
+  width:100%;
+  height:70px;
+  background-color:white;
+  border-radius:0px 0px 0px 50px;
+  box-shadow:2px 2px 5px gray;
+  position:fixed;
+  display:flex;
+  flex-wrap:wrap;
+  z-index:999;
+  }
+  
+.anim-top {
+  width:100%;
+  height:100%;
+  background-color:white;
+  border-radius:0px 0px 0px 0px;
+  position:fixed;
+  display:none;
+  z-index:999;
+  animation:anim-top 0.3s linear 1;
+  }
+  
+@keyframes anim-top {
+  0% {
+    height:100px;
+    border-radius:0px 0px 0px 50px;
+    }
+    
+  100% {
+    height:100%;
+    border-radius:0px 0px 0px 0px;
+    }
+  }
+  
+.one {
+  width:25%;
+  height:100%;
+  }
+  
+.two {
+  width:25%;
+  height:100%;
+  }
+  
+.three {
+  width:25%;
+  height:100%;
+  }
+  
+.four {
+  width:25%;
+  height:100%;
+
+  }
+  
+.oneimg {
+  width:40px;
+  height:40px;
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+  }
+  
+ .main-img {
+ 	width:100%;
+ height:110px;
+ }
+  
+  .openfav {
+  	width:20px;
+  position:absolute;
+  transform:translate(5px, 5px);
+  }
+  
+    .closefav {
+  	width:20px;
+  position:absolute;
+  transform:translate(5px, 5px);
+  display:none;
+  }
