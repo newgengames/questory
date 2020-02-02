@@ -2,11 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-   
      <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
-  
-
-
 <style>
 	html {
 		
@@ -128,6 +124,7 @@
   position:fixed;
   top:5px;
   left:87%;
+    z-index:998;
   display:none;
   }
 
@@ -156,11 +153,7 @@ document.getElementsByTagName('body')[0].style.overflow='visible';
 document.getElementsByClassName('zoom15x')[0].style.opacity='0.7'; 
 document.getElementsByClassName('zoom1x')[0].style.opacity='0.3'; ">1.5X</div>
 
-<img src="openfav.png" class="openfav openfav1" onclick="
-document.getElementsByClassName('img1')[0].style.display='none';
-document.getElementsByClassName('openfav1')[0].style.display='none'; 
-document.getElementsByClassName('closefav1')[0].style.display='block';">
-  	<img src="closefav.png" class="closefav closefav1">
+
 
 
 <div class="img">
@@ -267,5 +260,15 @@ document.getElementsByClassName('prev5')[0].style.display='block';">
 	
 </div>
 
+<img src="openfav.png" class="openfav openfav1" onclick="Createitems1();
+document.getElementsByClassName('openfav1')[0].style.display='none'; 
+document.getElementsByClassName('closefav1')[0].style.display='block';">
+  	<img src="closefav.png" class="closefav closefav1">
+
+<script>
+function CreateItems1() {
+  localStorage.setItem("<a href='001/001'><div class='module'><img src='res/dishgu.jpg' class='main-img'><div class='module-txt'>Dishgu 1</div></div></a>", "name");
+}
+</script>
 </body>
 </html>
