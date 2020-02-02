@@ -1,0 +1,369 @@
+<html>
+<head>
+	       <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
+<style>
+	  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url(Montserrat-Regular.ttf);
+  }
+  
+	body {
+		margin:0;
+		text-align:center;
+		font-family: Montserrat-Regular;
+		}
+		
+	.top {
+		width:100%;
+		height:70px;
+		background-color:white;
+		border-radius:0px 0px 0px 50px;
+		  box-shadow:2px 2px 5px gray;
+		position:fixed;
+		display:flex;
+		flex-wrap:wrap;
+		z-index:999;
+		}
+		
+	.anim-top {
+		width:100%;
+		height:100%;
+		background-color:white;
+		border-radius:0px 0px 0px 0px;
+		position:fixed;
+		display:none;
+		z-index:999;
+		animation:anim-top 0.3s linear 1;
+		}
+		
+	@keyframes anim-top {
+		0% {
+			height:100px;
+			border-radius:0px 0px 0px 50px;
+			}
+			
+		100% {
+			height:100%;
+			border-radius:0px 0px 0px 0px;
+			}
+		}
+		
+	.one {
+		width:25%;
+		height:100%;
+		}
+		
+	.two {
+		width:25%;
+		height:100%;
+		}
+		
+	.three {
+		width:25%;
+		height:100%;
+		}
+		
+	.four {
+		width:25%;
+		height:100%;
+		}
+		
+	.oneimg {
+		width:40px;
+  height:40px;
+  position:relative;
+  top:50%;
+  transform:translateY(-50%);
+		}
+		
+	.bottom {
+		width:100%;
+		height:auto;
+		background-color:#eee;
+		padding-top:70px;
+		transition:transform 0.5s;
+		}
+		
+	.h1 {
+		padding:15px;
+		font-size:15px;
+		width:75%;
+		text-align:left;
+		}
+		
+	.see-all {
+		transform:translateY(13px);
+		font-size:13px;
+		}
+		
+		section {
+  
+  width: 100%;
+  margin: 0 auto;
+
+  overflow: hidden;
+  display:flex;
+  flex-wrap:wrap;
+  transition:transform 0.4s;
+  animation:section 0.4s ease-out 1;
+}
+
+@keyframes section {
+	0% {
+		transform:translateX(100%);
+		opacity:0;
+	}
+		
+	100% {
+		transform:translateX(0%);
+		opacity:1;
+		}
+	}
+	
+
+.module {
+  width: 110px;
+  height: 155px;
+  background: white;
+  position: relative;
+  margin:0 auto;
+margin-bottom:10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  opacity:1;
+  
+}
+
+.module-txt {
+	font-size:14px;
+	}
+
+
+
+
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+ .main-img {
+ 	width:100%;
+ height:110px;
+ }
+		
+	
+</style>
+</head>
+<body>
+<div class="full">
+	<div class="anim-top"></div>
+	<div class="top">
+		<div class="one" onclick="Clicknavone(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+		<img src="res/home.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavone() {
+            setTimeout(
+              function() {
+               parent.location='title.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="two" onclick="Clicknavtwo(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/most.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavtwo() {
+            setTimeout(
+              function() {
+               parent.location='most.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="three" onclick="Clicknavthree(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/filter.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavthree() {
+            setTimeout(
+              function() {
+               parent.location='filter.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="four" onclick="Clickfour(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/favorite.png" class="oneimg">
+		</div>
+		<script>
+			function Clickfour() {
+            setTimeout(
+              function() {
+               parent.location='favorite.html';
+           }, 300);
+           }
+		</script>
+		
+	</div>
+	
+	<div class="bottom">
+		<!--latest stories-->
+	  <div class="bottom-top" style="display:flex;">
+		<div class="h1">Latest Stories</div> <div class="see-all" onclick="SeeAllOne();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';">SEE ALL</div>
+	  </div>
+	<script>
+		function SeeAllOne() {
+            setTimeout(
+              function() {
+               parent.location='latest-stories.html';
+           }, 500);
+           }
+	</script>
+		
+		<section>
+  
+  <div class="module" onclick="Clickone();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+	<script>
+		function Clickone() {
+            setTimeout(
+              function() {
+               parent.location='1/2/index.html';
+           }, 400);
+           }
+	</script>
+    <img src="res/mayavi.jpg" class="main-img" alt="">
+    <div class="module-txt">Mayavi 25<br/>മായാവി</div>
+  </div>
+  
+  
+    <div class="module" onclick="Clicktwo();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+	<script>
+		function Clicktwo() {
+            setTimeout(
+              function() {
+               parent.location='1.html';
+           }, 400);
+           }
+	</script>
+    <img src="res/soothran.jpg" class="main-img" alt="">
+    <div class="module-txt">Soothran 25</div>
+  </div>
+  
+  
+    <div class="module" onclick="Clickthree();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';
+document.getElementsByClassName('section2')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+	<script>
+		function Clickthree() {
+            setTimeout(
+              function() {
+               parent.location='1.html';
+           }, 400);
+           }
+	</script>
+    <img src="res/akku.jpg" class="main-img" alt="">
+    <div class="module-txt">Akku & Ikku 7</div>
+  </div>
+  
+  
+  </section>
+		
+		
+			
+			<!--latest facts-->
+	  <div class="bottom-top" style="display:flex; width:100%;">
+		<div class="h1" >Latest Facts</div> <div class="see-all" onclick="SeeAllTwo();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';">SEE ALL</div>
+	  </div>
+	<script>
+		function SeeAllTwo() {
+            setTimeout(
+              function() {
+               parent.location='latest-stories.html';
+           }, 500);
+           }
+	</script>
+		
+	  
+		
+		<section class="section2">
+  
+  <div class="module" onclick="Clicktwoone();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';
+document.getElementsByClassName('section2')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+	<script>
+		function Clicktwoone() {
+            setTimeout(
+              function() {
+               parent.location='1.html';
+           }, 400);
+           }
+	</script>
+    <img src="res/mayavi.jpg" class="main-img" alt="">
+    <div class="module-txt">Mayavi 25<br/>മായാവി</div>
+  </div>
+  
+  
+    <div class="module" onclick="Clicktwotwo();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+	<script>
+		function Clicktwotwo() {
+            setTimeout(
+              function() {
+               parent.location='1.html';
+           }, 400);
+           }
+	</script>
+    <img src="res/soothran.jpg" class="main-img" alt="">
+    <div class="module-txt">Soothran 25</div>
+  </div>
+  
+  
+    <div class="module" onclick="Clicktwothree();
+document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)';
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+	<script>
+		function Clicktwothree() {
+            setTimeout(
+              function() {
+               parent.location='1.html';
+           }, 400);
+           }
+	</script>
+    <img src="res/akku.jpg" class="main-img" alt="">
+    <div class="module-txt">Akku & Ikku 7</div>
+  </div>
+  
+  
+  </section>
+	
+	
+</div>
+<!--full closed-->
+</body>
+</html>
