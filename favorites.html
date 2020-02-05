@@ -15,16 +15,20 @@
 		padding-bottom:10px;
 		padding-top:10px;
 		}
+		
+		a {
+			display:flex;
+			flex-wrap:wrap;
+			}
 			
-		section {
+		#demo {
   
-  width: 100%;
+  
   margin: 0 auto;
   padding-top:15px;
   overflow: hidden;
-  display:flex;
-  flex-wrap:wrap;
   transition:transform 0.4s;
+  border:solid 1px violet;
   animation:section 0.4s ease-out 1;
 }
 
@@ -42,11 +46,13 @@
 	
 
 .module {
-  width: 110px;
-  height: 150px;
+  width: 90%;
+  height: 80px;
   background: white;
-  position: relative;
+ display:flex;
+ flex-wrap:wrap;
   margin:0 auto;
+  border:solid 1px green;
 margin-bottom:10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   opacity:1;
@@ -54,8 +60,8 @@ margin-bottom:10px;
 }
 
 .module-txt {
-	font-size:14px;
-	padding-top:7px;
+	font-size:16px;
+	transform:translate(10px, 30px);
 	}
 
 
@@ -83,8 +89,8 @@ margin-bottom:10px;
 }
 
  .main-img {
- 	width:100%;
- height:110px;
+ 	width:80px;
+ height:80px;
  }
  
  a {
@@ -93,7 +99,7 @@ margin-bottom:10px;
  }
  
  a:hover {
-     background:red;
+     opacity:0.3;
  }
  
  .removefav {
@@ -105,6 +111,8 @@ margin-bottom:10px;
 			box-shadow:2px 2px 5px gray;
 			
 			}
+			
+
 		
 	</style>
 </head>
@@ -112,11 +120,8 @@ margin-bottom:10px;
 	<div class="title">Favorites</div>
 	
 	<div class="removefav" onclick="localStorage.clear(); window.location.href=window.location.href;">Clear All</div>
-	<section>
-		<p id="demo">
-lavi 25</div></div></a>
-        </p>
-  </section>
+	<p id="demo">
+  </p>
   
   <script>
   var l, i;
