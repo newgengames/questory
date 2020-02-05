@@ -24,6 +24,7 @@
 		display:flex;
 		flex-wrap:wrap;
 		z-index:999;
+		transition:transform 0.5s;
 		}
 		
 	.anim-top {
@@ -243,7 +244,7 @@ document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)'
   
   <div class="module" onclick="Clickone();
 document.getElementsByClassName('bottom')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)'; ">
 	<script>
 		function Clickone() {
             setTimeout(
