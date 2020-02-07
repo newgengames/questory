@@ -2,6 +2,12 @@
   font-family: "Montserrat-Regular";
   src: url(Montserrat-Regular.ttf);
 }
+
+@font-face {
+  font-family: "Manjari-bold";
+  src: url(Manjari-Bold.otf);
+}
+
 html {
 	overflow-x:hidden;
 	}
@@ -12,6 +18,11 @@ body {
   background: #eee;
   overflow-x: hidden;
   font-family: Montserrat-Regular;
+	}
+	
+.malayalam {
+	font-family:Manjari-bold;
+	font-size:17px;
 	}
 
 section {
