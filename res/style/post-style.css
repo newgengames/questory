@@ -101,8 +101,7 @@ body {
 	width:60px;
 	padding:5px;
 	position:absolute;
-        top:0; left:0;
-	transform:translate(10px, -43px);
+        top:15px; left:15px;
 	border-radius:5px;
 	background-color:#75AB40;
 	opacity:0.7;
@@ -113,8 +112,7 @@ body {
 	width:60px;
 	padding:5px;
 	position:absolute;
-        top:0; left:0;
-	transform:translate(115%, -43px);
+        top:15px; left:85px;
 	border-radius:5px;
 	background-color:#75AB40;
 	opacity:0.3;
