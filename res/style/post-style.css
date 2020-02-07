@@ -120,19 +120,19 @@ body {
 	}
 	
 .openfav {
-  	width:30px;
+  	width:50px;
   position:fixed;
   top:5px;
-  left:87%;
+  left:85%;
   z-index:998;
   
   }
   
     .closefav {
-  	width:30px;
+  	width:50px;
   position:fixed;
   top:5px;
-  left:87%;
+  left:85%;
     z-index:998;
   display:none;
   }
