@@ -100,7 +100,8 @@ body {
 .zoom1x {
 	width:60px;
 	padding:5px;
-	position:fixed;
+	position:absolute;
+        top:0; left:0;
 	transform:translate(10px, -43px);
 	border-radius:5px;
 	background-color:#75AB40;
@@ -111,7 +112,8 @@ body {
 .zoom15x {
 	width:60px;
 	padding:5px;
-	position:fixed;
+	position:absolute;
+        top:0; left:0;
 	transform:translate(115%, -43px);
 	border-radius:5px;
 	background-color:#75AB40;
