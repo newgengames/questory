@@ -101,7 +101,7 @@ body {
 	width:60px;
 	padding:5px;
 	position:absolute;
-        top:15px; left:15px;
+        top:5px; left:5px;
 	border-radius:5px;
 	background-color:#75AB40;
 	opacity:0.7;
@@ -112,7 +112,7 @@ body {
 	width:60px;
 	padding:5px;
 	position:absolute;
-        top:15px; left:85px;
+        top:5px; left:80px;
 	border-radius:5px;
 	background-color:#75AB40;
 	opacity:0.3;
