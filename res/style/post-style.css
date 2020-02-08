@@ -18,7 +18,7 @@ body {
 	height: 100%;
 	z-index: 1000;
 	background-color:#eee;
-	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+	background:#e1e1e1;
 }
 
 .loading {
