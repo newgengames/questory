@@ -21,6 +21,13 @@ body {
 	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
 
+.loading {
+        position:absolute;
+        top:50%; left:50%;
+transform:translate(-50%, -50%);
+font-size:20px;
+}
+
 
 .page {
 	width:100%;
