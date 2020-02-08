@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Slide in from bottom boxes</title>
+       <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="res/latest-style.css">
+
+<style>
+	.top {
+		transition:transform 0.4s;
+		}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="anim-top"></div>
+	<div class="top">
+		<div class="one" onclick="Clicknavone(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+		<img src="res/home.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavone() {
+            setTimeout(
+              function() {
+               parent.location='title.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="two" onclick="Clicknavtwo(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/most.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavtwo() {
+            setTimeout(
+              function() {
+               parent.location='most.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="three" onclick="Clicknavthree(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/filter.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavthree() {
+            setTimeout(
+              function() {
+               parent.location='filter.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="four" onclick="Clicknavfour(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/favorite.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavfour() {
+            setTimeout(
+              function() {
+               parent.location='favorites.html';
+           }, 300);
+           }
+		</script>
+		
+	</div>
+<div class="title">Latest Facts</div>
+<section>
+  
+  
+    <div class="module" onclick="Clickfive();
+document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-130px)'; 
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)';">
+	<script>
+		function Clickfive() {
+            setTimeout(
+              function() {
+               parent.location='001/facts/005';
+           }, 400);
+           }
+	</script>
+    <img src="001/facts/005/001-5.jpg" class="main-img" alt="">
+    <div class="module-txt"><span class="malayalam">ഒരു ശരീരം ഒത്തിരി കാര്യം</span></div>
+  </div>
+  
+  
+  
+    <div class="module" onclick="Clickfour();
+document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-130px)';
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)'; ">
+	<script>
+		function Clickfour() {
+            setTimeout(
+              function() {
+               parent.location='001/facts/004';
+           }, 400);
+           }
+	</script>
+    <img src="001/facts/004/001-4.jpg" class="main-img" alt="">
+    <div class="module-txt"><span class="malayalam">വിറച്ചുവിറച്ച് ഒരു തീപ്പെട്ടി</span></div>
+  </div>
+  
+  
+  
+    <div class="module" onclick="Clickthree();
+document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-130px)';
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)'; ">
+	<script>
+		function Clickthree() {
+            setTimeout(
+              function() {
+               parent.location='001/facts/003';
+           }, 400);
+           }
+	</script>
+    <img src="001/facts/003/001-3.jpg" class="main-img" alt="">
+    <div class="module-txt"><span class="malayalam">രഹസ്യങ്ങളുടെ ബംഗ്ലാവ്</span></div>
+  </div>
+  
+  
+    <div class="module" onclick="Clicktwo();
+document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-130px)';
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)'; ">
+	<script>
+		function Clicktwo() {
+            setTimeout(
+              function() {
+               parent.location='001/facts/002';
+           }, 400);
+           }
+	</script>
+    <img src="001/facts/002/001-2.jpg" class="main-img" alt="">
+    <div class="module-txt"><span class="malayalam">കലാകാരന്റെ കാട്ടുപൂച്ച</span></div>
+  </div>
+  
+  <div class="module" onclick="Clickone();
+document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-130px)';
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)'; ">
+	<script>
+		function Clickone() {
+            setTimeout(
+              function() {
+               parent.location='001/facts/001';
+           }, 400);
+           }
+	</script>
+    <img src="001/facts/001/001-1.jpg" class="main-img" alt="">
+    <div class="module-txt"><span class="malayalam">തുളയ്ക്കൽ ചികിത്സ</span></div>
+  </div>
+  
+  
+  
+  
+
+</section>
+<!-- partial -->
+  <script src='res/jquery.js'></script><script  src="res/latest-script.js"></script>
+
+</body>
+</html>
