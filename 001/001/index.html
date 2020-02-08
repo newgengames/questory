@@ -15,7 +15,7 @@
 </head>
 <body>
 	
-	<div class="se-pre-con">Loading<br/><br/><br/><br/><br/><br/><br/>Loading</div>
+	<div class="se-pre-con"><div class="loading">LOADING...</div></div>
 
 <div class="page-hide"></div>
 
@@ -174,51 +174,13 @@ document.getElementsByClassName('openfav1')[0].style.display='none';
 document.getElementsByClassName('closefav1')[0].style.display='block';
 document.getElementsByClassName('toast')[0].style.display='block';">
   	<img src="https://newgengames.github.io/questory/res/closefav.png" class="closefav closefav1">
-
+     <div class="toast">Added to favorites</div>
+     
 <script>
 function Createitems1() {
-  localStorage.setItem("<a href='001/001'><div class='module'><img src='res/dishgu.jpg' class='main-img'><div class='module-txt'>Dishgu 1</div></div></a>", "name");
+  localStorage.setItem("<a href='001/001'><div class='module'><img src='res/dishgu.jpg' class='main-img'><div class='module-txt'>ഡിഷ്കു 1</div></div></a>", "name");
 }
 </script>
-<style>
-	.toast {
-		position: fixed;
-		top:75%;
-		left:50%;
-		transform:translate(-50%, 40px);
-		z-index:9999;
-		background-color:#900033;
-		color:white;
-		padding:5px 20px 5px 20px;
-		font-size:18px;
-		border-radius:4px;
-		opacity:0;
-		animation:toast 1s linear 1;
-		display:none;
-		}
-		
-	@keyframes toast {
-		0% {
-			opacity:0
-			transform:translate(-50%, 40px);
-			}
-			
-		25% {
-			opacity:1;
-			transform:translate(-50%, 0px);
-			}
-			
-		75% {
-			opacity:1;
-			transform:translate(-50%, 0px);
-			}
-			
-		100% {
-			opacity:0;
-			transform:translate(-50%, -40px);
-			}
-		}
-</style>
-<div class="toast">Added to favorites</div>
+
 </body>
 </html>
