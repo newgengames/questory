@@ -15,7 +15,7 @@
 </head>
 <body>
 	
-	<div class="se-pre-con"></div>
+	<div class="se-pre-con"><div class="loading">LOADING...</div></div>
 
 <div class="page-hide"></div>
 
@@ -86,12 +86,14 @@ document.getElementsByClassName('prev2')[0].style.display='block';">
 
 <img src="https://newgengames.github.io/questory/res/openfav.png" class="openfav openfav1" onclick="Createitems1();
 document.getElementsByClassName('openfav1')[0].style.display='none'; 
-document.getElementsByClassName('closefav1')[0].style.display='block';">
+document.getElementsByClassName('closefav1')[0].style.display='block';
+document.getElementsByClassName('toast')[0].style.display='block';">
   	<img src="https://newgengames.github.io/questory/res/closefav.png" class="closefav closefav1">
+     <div class="toast">Added to favorites</div>
 
 <script>
 function Createitems1() {
-  localStorage.setItem("<a href='001/008'><div class='module'><img src='res/raja.jpg' class='main-img'><div class='module-txt'>Raja Thuglan 1</div></div></a>", "name");
+  localStorage.setItem("<a href='001/008'><div class='module'><img src='res/raja.jpg' class='main-img'><div class='module-txt'> രാജാ തുഗ്ലൻ 1</div></div></a>", "name");
 }
 </script>
 </body>
