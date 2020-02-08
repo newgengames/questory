@@ -110,7 +110,9 @@ font-size:20px;
 	position:absolute;
         top:5px; left:5px;
 	border-radius:5px;
+        border:solid 1px #1F212B;
 	background:#F69272;
+        color:#FEF6AA;
 	opacity:0.7;
 	z-index:999;
 	}
@@ -121,7 +123,9 @@ font-size:20px;
 	position:absolute;
         top:5px; left:80px;
 	border-radius:5px;
+        border:solid 1px #1F212B;
 	background:#F69272;
+        color:#FEF6AA;
 	opacity:0.3;
 	z-index:999;
 	}
