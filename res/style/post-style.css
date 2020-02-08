@@ -144,6 +144,44 @@ font-size:20px;
   display:none;
   }
 
+.toast {
+		position: fixed;
+		top:75%;
+		left:50%;
+		transform:translate(-50%, 40px);
+		z-index:9999;
+		background-color:#900033;
+		color:white;
+		padding:5px 20px 5px 20px;
+		font-size:18px;
+		border-radius:4px;
+		opacity:0;
+		animation:toast 1s linear 1;
+		display:none;
+		}
+		
+	@keyframes toast {
+		0% {
+			opacity:0
+			transform:translate(-50%, 40px);
+			}
+			
+		25% {
+			opacity:1;
+			transform:translate(-50%, 0px);
+			}
+			
+		75% {
+			opacity:1;
+			transform:translate(-50%, 0px);
+			}
+			
+		100% {
+			opacity:0;
+			transform:translate(-50%, -40px);
+			}
+		}
+
   @media (min-width:600px) {
 	.img {
 		width:90%;
