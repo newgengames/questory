@@ -1,6 +1,6 @@
 body {
 		margin:0;
-		overflow:hidden;
+		overflow-x:hidden;
 		font-weight:800;
 		background:#e1e1e1;
 		user-select: none; /* supported by Chrome and Opera */
