@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Slide in from bottom boxes</title>
+       <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="res/latest-style.css">
+
+<style>
+	.top {
+		transition:transform 0.4s;
+		}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="anim-top"></div>
+	<div class="top">
+		<div class="one" onclick="Clicknavone(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+		<img src="res/home.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavone() {
+            setTimeout(
+              function() {
+               parent.location='title.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="two" onclick="Clicknavtwo(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/most.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavtwo() {
+            setTimeout(
+              function() {
+               parent.location='most.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="three" onclick="Clicknavthree(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/filter.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavthree() {
+            setTimeout(
+              function() {
+               parent.location='filter.html';
+           }, 300);
+           }
+		</script>
+		
+		<div class="four" onclick="Clicknavfour(); document.getElementsByClassName('top')[0].style.display='none'; document.getElementsByClassName('anim-top')[0].style.display='block';">
+			<img src="res/favorite.png" class="oneimg">
+		</div>
+		<script>
+			function Clicknavfour() {
+            setTimeout(
+              function() {
+               parent.location='favorites.html';
+           }, 300);
+           }
+		</script>
+		
+	</div>
+<div class="title">MAYAVI<span class="malayalam"> [മായാവി] </span></div>
+<section>
+  
+  
+ 
+  
+  <div class="module" onclick="Clickone();
+document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
+document.getElementsByClassName('title')[0].style.transform='translateY(-130px)';
+document.getElementsByClassName('top')[0].style.transform='translateY(-90px)'; ">
+	<script>
+		function Clickone() {
+            setTimeout(
+              function() {
+               parent.location='001/001';
+           }, 400);
+           }
+	</script>
+    <img src="res/dishgu.jpg" class="main-img" alt="">
+    <div class="module-txt"><span class="malayalam">ഡിഷ്കു 1</span></div>
+  </div>
+  
+  
+  
+  
+
+</section>
+<!-- partial -->
+  <script src='res/jquery.js'></script><script  src="res/latest-script.js"></script>
+
+</body>
+</html>
