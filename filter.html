@@ -9,17 +9,50 @@
 
 <style>
 	body {
+		background:#e1e1e1;
+		}
+		
+	.full {
 		background:white;
+		width:100%;
+		height:100%;
+		border-radius:0px 0px 0px 50px;
+		transition:height 0.5s;
 		}
 		
 	.title {
 		padding-top:20px;
 		font-size:20px;
 		}
+		
+	.top {
+		width:100%;
+		height:70px;
+		background-color:white;
+		border-radius:0px 0px 0px 50px;
+		  box-shadow:2px 2px 5px gray;
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:9999;
+		animation:topani 0.4s linear 1;
+		display:none;
+		}
+		
+	@keyframes topani {
+		0% {
+			height:100%;
+			}
+			
+		100% {
+			height:70px;
+			}
+		}
 </style>
 
 </head>
 <body>
+<div class="full">
 <!-- partial:index.partial.html -->
 <div class="anim-top"></div>
 	
@@ -78,13 +111,14 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
     
   
   <div class="module" onclick="Clickten();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block'; ">
 	<script>
 		function Clickten() {
             setTimeout(
               function() {
-               parent.location='filter/characters/mayavi.html';
+               parent.location='1.html';
            }, 400);
            }
 	</script>
@@ -94,8 +128,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   
   
   <div class="module" onclick="Clickeleven();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block'; ">
 	<script>
 		function Clickeleven() {
             setTimeout(
@@ -109,8 +144,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   </div>
   
     <div class="module" onclick="Clicktwelve();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block'; ">
 	<script>
 		function Clicktwelve() {
             setTimeout(
@@ -125,8 +161,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   
   
     <div class="module" onclick="Clickthirteen();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block'; ">
 	<script>
 		function Clickthirteen() {
             setTimeout(
@@ -140,8 +177,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   </div>
   
     <div class="module" onclick="Clickfourteen();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block'; ">
 	<script>
 		function Clickfourteen() {
             setTimeout(
@@ -157,8 +195,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   
   
     <div class="module" onclick="Clickfifteen();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block';  ">
 	<script>
 		function Clickfifteen() {
             setTimeout(
@@ -174,8 +213,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   
   
     <div class="module" onclick="Clicksixteen();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block'; ">
 	<script>
 		function Clicksixteen() {
             setTimeout(
@@ -191,8 +231,9 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   
   
     <div class="module" onclick="Clickseventeen();
-document.getElementsByTagName('section')[0].style.transform='translateX(-100%)'; 
-document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; ">
+document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'; 
+document.getElementsByClassName('full')[0].style.display='none'; 
+document.getElementsByClassName('top')[0].style.display='block';  ">
 	<script>
 		function Clickseventeen() {
             setTimeout(
@@ -258,8 +299,11 @@ document.getElementsByClassName('title')[0].style.transform='translateY(-100px)'
   
 
 </section>
+
 <!-- partial -->
   <script src='res/jquery.js'></script><script  src="res/latest-script.js"></script>
-
+</div>
+<!--full closed-->
+	<div class="top"></div>
 </body>
 </html>
