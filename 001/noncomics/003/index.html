@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+	 <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
+	 <link rel="stylesheet" type="text/css" href="https://newgengames.github.io/questory/res/style/post-style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
+<body>
+	
+	<div class="se-pre-con"><div class="loading">LOADING...</div></div>
+
+<div class="page-hide"></div>
+
+<div class="zoom1x" onclick="
+document.getElementsByClassName('img1')[0].style.width='100%'; 
+document.getElementsByClassName('img1')[0].style.height='120%'; 
+document.getElementsByTagName('body')[0].style.overflow='hidden';
+document.getElementsByClassName('zoom15x')[0].style.opacity='0.3'; 
+document.getElementsByClassName('zoom1x')[0].style.opacity='0.7'; ">1.0X</div>
+        <div class="zoom15x" onclick="
+document.getElementsByClassName('img1')[0].style.width='200%'; 
+document.getElementsByClassName('img1')[0].style.height='200%';
+document.getElementsByTagName('body')[0].style.overflow='visible';
+document.getElementsByClassName('zoom15x')[0].style.opacity='0.7'; 
+document.getElementsByClassName('zoom1x')[0].style.opacity='0.3'; ">2.0X</div>
+
+
+
+
+<div class="img-bg">
+	<img src="1.jpg" class="img img1">
+	
+</div>
+
+<div class="page">
+	<div class="page one">1/1</div>
+</div>
+
+<div class="navigate">
+	
+	
+	
+</div>
+
+<img src="https://newgengames.github.io/questory/res/openfav.png" class="openfav openfav1" onclick="Createitems1();
+document.getElementsByClassName('openfav1')[0].style.display='none'; 
+document.getElementsByClassName('closefav1')[0].style.display='block';
+document.getElementsByClassName('toast')[0].style.display='block';">
+  	<img src="https://newgengames.github.io/questory/res/closefav.png" class="closefav closefav1">
+     <div class="toast">Added to favorites</div>
+
+<script>
+function Createitems1() {
+  localStorage.setItem("<a href='001/noncomics/003'><div class='module'><img src='001/noncomics/003/001-3.jpg' class='main-img'><div class='module-txt'>ചോക്ലേറ്റ് രക്ഷിച്ചു</div></div></a>", "name");
+}
+</script>
+</body>
+</html>
